@@ -84,9 +84,11 @@
                                 </div>
                                 <div class="mt-3">
                                     <p>
-                                        <a target="_blank" href="<?php echo $filmler[1]["url"]; ?>" class="btn btn-outline-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                                        <a target="_blank" href="<?php echo $filmler[1]["url"]; ?>"
+                                            class="btn btn-outline-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
                                             Film Link
                                         </a>
+
                                     </p>
                                 </div>
 
@@ -116,9 +118,11 @@
                                 </div>
                                 <div class="mt-3">
                                     <p>
-                                        <a target="_blank" href="<?php echo $filmler[2]["url"]; ?>" class="btn btn-outline-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                                        <a target="_blank" href="<?php echo $filmler[2]["url"]; ?>"
+                                            class="btn btn-outline-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
                                             Film Link
                                         </a>
+
                                     </p>
                                 </div>
 
@@ -147,7 +151,8 @@
                                 </div>
                                 <div class="mt-3">
                                     <p>
-                                        <a target="_blank" href="<?php echo $filmler[0]["url"]; ?>" class="btn btn-outline-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                                        <a target="_blank" href="<?php echo $filmler[0]["url"]; ?>"
+                                            class="btn btn-outline-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
                                             Film Link
                                         </a>
                                     </p>
