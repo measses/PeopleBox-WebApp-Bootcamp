@@ -12,7 +12,8 @@
             "resim" => "1.jpeg",
             "yorumSayisi" => "Yorum: 55",
             "begeniSayisi" => "Beğeni: 85",
-            "vizyon" => "Viyonda: Evet"
+            "vizyon" => "Viyonda: Evet",
+            "url" => "https://www.imdb.com/title/tt13045890/",
         ),
         "2" => array(
             "baslik" => "Walking Dead",
@@ -20,7 +21,8 @@
             "resim" => "2.jpeg",
             "yorumSayisi" => "Yorum: 55",
             "begeniSayisi" => "Beğeni: 85",
-            "vizyon" => "Viyonda: Evet"
+            "vizyon" => "Viyonda: Evet",
+            "url"=> "https://www.imdb.com/title/tt1520211/",
         )
         );
 
@@ -30,7 +32,8 @@
             "resim" => "3.jpeg",
             "yorumSayisi" => "Yorum: 55",
             "begeniSayisi" => "Beğeni: 85",
-            "vizyon" => "Viyonda: Evet"
+            "vizyon" => "Viyonda: Evet",
+            "url"=> "https://www.imdb.com/title/tt4052886/?ref_=nv_sr_srsg_0_tt_7_nm_1_q_lucif",
     );
     
     $filmler["0"] = $yeni_film;
@@ -77,7 +80,16 @@
                                     <span class="badge bg-success"><?php echo $filmler["1"]["yorumSayisi"]?></span>
                                     <span class="badge bg-success"><?php echo $filmler["1"]["begeniSayisi"]?></span>
                                     <span class="badge bg-success"><?php echo $filmler["1"]["vizyon"]?></span>
+
                                 </div>
+                                <div class="mt-3">
+                                    <p>
+                                        <a target="_blank" href="<?php echo $filmler[1]["url"]; ?>" class="btn btn-outline-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                                            Film Link
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -102,6 +114,14 @@
                                     <span class="badge bg-success"><?php echo $filmler["2"]["begeniSayisi"]?></span>
                                     <span class="badge bg-success"><?php echo $filmler["2"]["vizyon"]?></span>
                                 </div>
+                                <div class="mt-3">
+                                    <p>
+                                        <a target="_blank" href="<?php echo $filmler[2]["url"]; ?>" class="btn btn-outline-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                                            Film Link
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -116,7 +136,7 @@
                             <div class="card-body">
                                 <h5 class="card-title"><?php echo $filmler["0"]["baslik"]?></h5>
                                 <p class="card-text">
-                                    <?php echo ucfirst(strtolower(substr($filmler[3]["aciklama"], 0, 50))) . '...';?>
+                                    <?php echo ucfirst(strtolower(substr($filmler[0]["aciklama"], 0, 50))) . '...';?>
 
                                 </p>
                                 <div>
@@ -125,6 +145,14 @@
                                     <span class="badge bg-success"><?php echo $filmler["0"]["begeniSayisi"]?></span>
                                     <span class="badge bg-success"><?php echo $filmler["0"]["vizyon"]?></span>
                                 </div>
+                                <div class="mt-3">
+                                    <p>
+                                        <a target="_blank" href="<?php echo $filmler[0]["url"]; ?>" class="btn btn-outline-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                                            Film Link
+                                        </a>
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
                     </div>
