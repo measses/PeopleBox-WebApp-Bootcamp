@@ -14,7 +14,7 @@ Eğer bu depoya katkıda bulunmak isterseniz, aşağıdaki adımları takip edeb
 
 ## Lisans
 
-Bu proje [Lisans Adı] ile lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasına bakın.
+Bu proje MIT ile lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasına bakın.
 
 ## İletişim
 
