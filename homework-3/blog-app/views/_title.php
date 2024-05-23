@@ -1,7 +1,7 @@
 <?php
 $data = getData();
 $activeMovies = array_filter($data["movies"], function($movie) {
-    return $movie["is-active"];
+    return $movie["isActive"];
 });
 $ozet = count($data["categories"]) . ' kategoride ' . count($activeMovies) . ' film listelenmiştir';
 const BASLIK = "Popüler Filmler";

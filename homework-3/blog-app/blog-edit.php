@@ -55,7 +55,7 @@
                         </div>
                         <div class="form-check mb-3">
                             <label for="isActive" class="form-check-label">Is Active</label>
-                            <input type="checkbox" class="form-check-input" name="isActive" id="isActive" <?php if($selectedMovie["is-active"]){echo "checked";} ?>>
+                            <input type="checkbox" class="form-check-input" name="isActive" id="isActive" <?php if($selectedMovie["isActive"]){echo "checked";} ?>>
                         </div>
 
                         <input type="submit" value="Submit" class="btn btn-primary">

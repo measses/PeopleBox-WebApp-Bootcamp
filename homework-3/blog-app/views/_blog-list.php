@@ -1,6 +1,6 @@
 <?php  foreach(getData()["movies"] as $id => $film): ?> 
 
-    <?php if($film["is-active"]):?>
+    <?php if($film["isActive"]):?>
 
 <div class="card mb-3">
     <div class="row">

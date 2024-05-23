@@ -7,8 +7,11 @@
         $description = $_POST["description"];
         $image = $_POST["image"];
         $url = $_POST["url"];
+        $isActive = $_POST['isActive'] == 1 ? true : false;
 
-        createBlog($title,$description,$image,$url);
+
+        createBlog($title, $description, $image, $url, $isActive);
+
         header('Location: index.php');
     }
 ?>
@@ -49,8 +52,16 @@
                             <label for="url" class="form-label">url</label>
                             <input type="text" class="form-control" name="url" id="url">
                         </div>
+                       <div>
+                       <label for="isActive"></label>
+                            <select name="isActive" id="isActive">
+                                <option value="1">Active</option>
+                                <option value="0">Inactive</option>
+                            </select>
 
-                        <input type="submit" value="Submit" class="btn btn-primary">
+                       <div class="mt-3">
+                       <input type="submit" value="Submit" class="btn btn-primary mt-2">
+                       </div>
 
                     
                     </form>

@@ -36,7 +36,7 @@
                             <td><?php echo $movie["likes"] ?></td>
                             <td><?php echo $movie["comments"] ?></td>
                             <td>
-                                <?php if($movie["is-active"]):?>
+                                <?php if($movie["isActive"]):?>
                                     <i class="fas fa-check"></i>
                                 <?php else: ?>
                                     <i class="fas fa-times"></i>

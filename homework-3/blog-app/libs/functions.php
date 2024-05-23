@@ -39,7 +39,7 @@ function getUser(string $username){
 
 
 
-function createBlog(string $title, string $description, string $image,string $url, int $comments=0,int $likes=0) {
+function createBlog(string $title, string $description, string $image,string $url, int $comments=0,int $likes=0, bool $isActive=true) {
     $db = getData();
 
     array_push($db["movies"], array(
@@ -50,7 +50,8 @@ function createBlog(string $title, string $description, string $image,string $ur
         "url" => $url,
         "comments" => $comments,
         "likes" => $likes,
-        "is-active" => false
+        "isActive"=> $isActive
+
     ));
 
     $myfile = fopen("db.json","w");
@@ -67,7 +68,7 @@ function editBlog(int $id,string $title,string $description,string $image,string
             $movie["description"] = $description;
             $movie["image"] = $image;
             $movie["url"] = $url;
-            $movie["is-active"] = $isActive;
+            $movie["isActive"] = $isActive;
 
             $myfile = fopen("db.json","w");
             fwrite($myfile, json_encode($db, JSON_PRETTY_PRINT));
