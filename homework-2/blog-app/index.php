@@ -94,7 +94,7 @@ const limit = 85;
                             </div>
                         </div>
                     </div>
-                <?php endforeach; ?>
+                <?php endforeach; ?>    
             </div>
         </div>
     </div>
