@@ -20,16 +20,15 @@
 <?php include "views/_navbar.php" ?>
 
 <div class="container my-3">
-
     <div class="row">
 
         <div class="col-3">
-            <?php include "views/_menu.php" ?>     
+            <?php include "views/_menu.php" ?>
         </div>
         <div class="col-9">
 
-           <div class="card">
-           
+            <div class="card">
+
                 <div class="card-body">
                     <form action="blog-create.php" method="POST">
 
@@ -52,27 +51,28 @@
                             <label for="url" class="form-label">url</label>
                             <input type="text" class="form-control" name="url" id="url">
                         </div>
-                       <div>
-                       <label for="isActive"></label>
-                            <select name="isActive" id="isActive">
-                                <option value="1">Active</option>
-                                <option value="0">Inactive</option>
-                            </select>
+                        <div>
+                            <div class="form-group">
+                                <label for="isActive">Aktiflik Durumu</label>
+                                <select class="form-control" name="isActive" id="isActive">
+                                    <option value="1">Active</option>
+                                    <option value="0">Inactive</option>
+                                </select>
+                            </div>
 
-                       <div class="mt-3">
-                       <input type="submit" value="Submit" class="btn btn-primary mt-2">
-                       </div>
+                            <div class="mt-3">
+                                <input type="submit" value="Submit" class="btn btn-primary mt-2">
+                            </div>
 
-                    
+
                     </form>
                 </div>
             </div>
 
-        </div>    
-    
+        </div>
+
     </div>
 
 </div>
 
 <?php include "views/_footer.php" ?>
-
